@@ -90,12 +90,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hongson">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="使用 vue + webpack 开发项目快接近一年了，踩过大大小小的坑，一直没时间去整理，其实就是懒，今天应我们老大要求，写一篇踩坑总结，以下踩坑是基于项目实战过程中经常遇到的。  1. 直接用下标修改数组值时，视图没更新实际开发，数组类型是很常用的类型，比如这里定义一个布尔值数组，绑定在一组 li 列表上，当值为 true 时为该元素绑定一个类名 active // 声明在data对象上 ar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue踩坑之路">
+<meta property="og:url" content="http://yoursite.com/2017/07/09/vue-issue/index.html">
 <meta property="og:site_name" content="Hongson">
+<meta property="og:description" content="使用 vue + webpack 开发项目快接近一年了，踩过大大小小的坑，一直没时间去整理，其实就是懒，今天应我们老大要求，写一篇踩坑总结，以下踩坑是基于项目实战过程中经常遇到的。  1. 直接用下标修改数组值时，视图没更新实际开发，数组类型是很常用的类型，比如这里定义一个布尔值数组，绑定在一组 li 列表上，当值为 true 时为该元素绑定一个类名 active // 声明在data对象上 ar">
+<meta property="og:updated_time" content="2017-07-09T11:20:19.997Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hongson">
+<meta name="twitter:title" content="Vue踩坑之路">
+<meta name="twitter:description" content="使用 vue + webpack 开发项目快接近一年了，踩过大大小小的坑，一直没时间去整理，其实就是懒，今天应我们老大要求，写一篇踩坑总结，以下踩坑是基于项目实战过程中经常遇到的。  1. 直接用下标修改数组值时，视图没更新实际开发，数组类型是很常用的类型，比如这里定义一个布尔值数组，绑定在一组 li 列表上，当值为 true 时为该元素绑定一个类名 active // 声明在data对象上 ar">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/09/vue-issue/"/>
 
 
 
 
 
-  <title>Hongson</title>
+  <title>Vue踩坑之路 | Hongson</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,9 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/vue-issue/" itemprop="url">Vue踩坑之路</a></h1>
+          <h1 class="post-title" itemprop="name headline">Vue踩坑之路</h1>
         
 
         <div class="post-meta">
@@ -317,9 +317,7 @@
       
 
       
-        
-          
-            <p>使用 vue + webpack 开发项目快接近一年了，踩过大大小小的坑，一直没时间去整理，其实就是懒，今天应我们老大要求，写一篇踩坑总结，以下踩坑是基于项目实战过程中经常遇到的。</p>
+        <p>使用 vue + webpack 开发项目快接近一年了，踩过大大小小的坑，一直没时间去整理，其实就是懒，今天应我们老大要求，写一篇踩坑总结，以下踩坑是基于项目实战过程中经常遇到的。</p>
 <hr>
 <h3 id="1-直接用下标修改数组值时，视图没更新"><a href="#1-直接用下标修改数组值时，视图没更新" class="headerlink" title="1. 直接用下标修改数组值时，视图没更新"></a>1. 直接用下标修改数组值时，视图没更新</h3><p>实际开发，数组类型是很常用的类型，比如这里定义一个布尔值数组，绑定在一组 li 列表上，当值为 true 时为该元素绑定一个类名 active</p>
 <pre><code>// 声明在data对象上
@@ -371,20 +369,27 @@ this.$refs.ruleForm.resetFields();
 <hr>
 <p>以上是这一段时间使用 vue 开发过程中遇到的坑，由于水平有限，如有补充或者写错的地方欢迎指出。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -392,141 +397,38 @@ this.$refs.ruleForm.resetFields();
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/24/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hongson">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hongson">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/24/hello-world/" itemprop="url">Hello World</a></h1>
-        
+      
 
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T18:29:18+08:00">
-                2017-05-24
-              </time>
+              <a href="/2017/05/24/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -534,6 +436,10 @@ this.$refs.ruleForm.resetFields();
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -553,8 +459,17 @@ this.$refs.ruleForm.resetFields();
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -598,6 +513,22 @@ this.$refs.ruleForm.resetFields();
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-直接用下标修改数组值时，视图没更新"><span class="nav-number">1.</span> <span class="nav-text">1. 直接用下标修改数组值时，视图没更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-对象新增属性后，视图没更新"><span class="nav-number">2.</span> <span class="nav-text">2. 对象新增属性后，视图没更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-父组件通过prop传递对象给子组件"><span class="nav-number">3.</span> <span class="nav-text">3. 父组件通过prop传递对象给子组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-父组件传递给子组件的数据延迟问题"><span class="nav-number">4.</span> <span class="nav-text">4. 父组件传递给子组件的数据延迟问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-访问子组件的ref属性报错：undefined"><span class="nav-number">5.</span> <span class="nav-text">5. 访问子组件的ref属性报错：undefined</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-ref-与-v-for"><span class="nav-number">6.</span> <span class="nav-text">6. ref 与 v-for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-组件上直接监听dom事件"><span class="nav-number">7.</span> <span class="nav-text">7. 组件上直接监听dom事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-使用自定义事件的表单输入组件"><span class="nav-number">8.</span> <span class="nav-text">8. 使用自定义事件的表单输入组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-自定义指令"><span class="nav-number">9.</span> <span class="nav-text">9. 自定义指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-使用字面量语法传递数值"><span class="nav-number">10.</span> <span class="nav-text">10. 使用字面量语法传递数值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-key的使用"><span class="nav-number">11.</span> <span class="nav-text">11. key的使用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -718,6 +649,10 @@ this.$refs.ruleForm.resetFields();
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
